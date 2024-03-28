@@ -12,10 +12,10 @@ function getInput() {
         // PAYEEE
         function paye(){
             //if statement to determine amount of PAYE oweable
-            if (r2 > 500000 && r2 <=100000000) {
+            if (r2 > 500000 && r2 <100000000) {
                 let myIncome= r2*0.35;
-                console.log(myIncome);
-                return                
+                return myIncome;
+                              
             } 
             else if(r2>=250000 && r2 < 500000){
                        let myIncome= r2*0.30;
@@ -44,10 +44,10 @@ function getInput() {
         // nhif
         function nhif(){
             //if statement to determine amount of NHIF contribution deducted
-            if (r2 > 500000 && r2 <=100000000) {
+            if (r2 > 500000 && r2 <100000000) {
                 let myContribution= r2*0.25;
-                console.log(myContribution);
-                return                
+                return myContribution;
+                               
             } 
             else if(r2>=250000 && r2 < 500000){
                        let myContribution= r2*0.20;

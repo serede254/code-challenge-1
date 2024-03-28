@@ -2,7 +2,7 @@ const prompt=require("prompt-sync")({sigint:true});
 let speed = prompt("Enter speed here:");
 points= 0
 if (speed<=70){
-    console.log(points);
+    console.log(`points:${points}`);
 }
 else if(speed > 70 && speed <75){
    licensePoints= points+1
@@ -53,7 +53,7 @@ else if(speed >= 75 && speed <80){
  console.log (`Points:${licensePoints}`);
  }
  else if(speed>=130){
-    licensePoints=points+1
+    licensePoints=points+12
     console.log(`Points:${licensePoints}`)
     console.log("your license is suspended")
  }
